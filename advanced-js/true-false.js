@@ -18,3 +18,19 @@ else{
 
 let name1;
 console.log(name1);
+
+
+if({}){
+    console.log("I am not false")
+}
+else{
+    console.log("I am false")
+}
+
+
+if( "false" ){
+    console.log("I am not false")
+}
+else{
+    console.log("I am false")
+}
