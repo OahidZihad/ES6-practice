@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>My Item</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque ex esse ab iste, numquam dolorum enim illum! Vitae, nisi.</li>
+        <li onclick="this.innerHTML='Someone Clicked'">Maiores neque recusandae accusantium? Quos aliquid hic earum, repellat dolores delectus exercitationem aspernatur vero dolore beatae nostrum dolor explicabo praesentium?</li>
+        <li onclick="itemClickHandler(event)">Eveniet, molestiae odio. Nulla fugiat totam facere reiciendis, recusandae, amet in facilis error blanditiis ullam repudiandae debitis adipisci inventore eum!</li>
+        <li onclick="alert('Hello Rerum')">Harum ratione nemo accusamus enim cupiditate molestias architecto vel ducimus, asperiores, at recusandae quibusdam non magnam tempore aut sapiente porro?</li>
+        <li id="lastPerson">Qui inventore voluptates odit accusamus aut, debitis vitae neque expedita distinctio consequatur, ipsa a itaque quos assumenda error cum ullam?</li>
+    </ul>
+    <script>
+        function itemClickHandler(event){
+            console.log(event.target.innerHTML);
+        }
+        document.getElementById('lastPerson').addEventListener('click',itemClickHandler);
+    </script>
+</body>
+</html>
